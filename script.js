@@ -2,5 +2,5 @@
 let count=0;
 function incemetCount() {
 	alert(count);
-	document.getElementById("counter").innerText=count++;
+	document.getElementById("counter").innerText=++count;
 }
