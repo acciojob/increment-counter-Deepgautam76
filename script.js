@@ -1,6 +1,10 @@
 //your JS code here. If required.
-let count=0;
-function incemetCount() {
-	alert(count);
-	document.getElementById("counter").innerText=++count;
-}
+        let counterElement = document.getElementById("counter");
+        let incrementBtn = document.getElementById("incrementBtn");
+
+        incrementBtn.addEventListener("click", function() {
+            let currentValue = parseInt(counterElement.innerText);
+            alert(currentValue); 
+            counterElement.innerText = currentValue + 1;
+        });
+
